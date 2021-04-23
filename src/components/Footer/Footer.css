@@ -1,0 +1,11 @@
+.footer{
+    width: 100%;
+    /* position: fixed;
+    bottom: 0; */
+padding: 56px 0 46px;
+}
+.footer__copyright{
+max-width: 299px;
+margin: 0 auto 0;
+
+}
