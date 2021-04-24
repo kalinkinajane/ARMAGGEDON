@@ -1,0 +1,9 @@
+.destruction {
+  width: calc(100% - 363px);
+  margin-left: 206px;
+  padding-top: 26px;
+}
+.card__container {
+  width: 100%;
+  margin-top: 24px;
+}

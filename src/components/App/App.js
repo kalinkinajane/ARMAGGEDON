@@ -10,7 +10,8 @@ import  useWindowWidth  from '../../hook/useWindowWidth';
 import * as api from '../../utils/api';
 
 function App() {
-  const [cards, setData] = React.useState([]);
+  const [cards, setData] = useState([]);
+  const [destructionCard, setDestructionCard] = useState([]);
   const size = useWindowWidth();
   useEffect(() => {
     api.getInfo().then((data) =>{
@@ -19,16 +20,19 @@ function App() {
      setData(newArr)
     })
   }, [])
+function onDestruction (card){
+  setDestructionCard([card, ...destructionCard ])
+}
 
   return (
     <div className="app">
   <Header/>
   <Switch>
     <Route path="/" exact>
-      <Main size={size} cards={cards}/>
+      <Main size={size} cards={cards} onDestruction={onDestruction}/>
     </Route>
     <Route path="/destruction" exact>
-      <Destruction size={size} cards={cards}/>
+      <Destruction size={size} cards={destructionCard}/>
     </Route>
     <Route path="/about" exact>
       <About />
