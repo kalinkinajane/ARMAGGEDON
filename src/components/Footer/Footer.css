@@ -1,11 +1,23 @@
-.footer{
-    width: 100%;
-    /* position: fixed;
-    bottom: 0; */
-padding: 56px 0 46px;
+.footer {
+  width: 100%;
+  padding: 56px 0 46px;
 }
-.footer__copyright{
-max-width: 299px;
-margin: 0 auto 0;
-
+.footer__copyright {
+  max-width: 299px;
+  margin: 0 auto 0;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media screen and (max-width: 414px) {
+  .footer {
+    width: 100%;
+    padding: 30px 0 24px;
+  }
+  .footer__copyright {
+    max-width: 218px;
+    text-align: center;
+  }
 }

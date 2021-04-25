@@ -1,44 +1,80 @@
-.main{
-    width: calc(100% - 363px);
-    margin-left: 206px;
-    padding-top: 26px;
+.main {
+  width: calc(100% - 363px);
+  margin-left: 206px;
+  padding-top: 26px;
 }
-.card__container{
-    width: 100%;
-    margin-top: 24px;
+.card__container {
+  width: 100%;
+  margin-top: 24px;
 }
-.main__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.main__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.main__chechbox{
-    background: rgba(0, 0, 0, 0.87); 
-   height: 18px;
-   width: 18px;
-   margin: 0 10px 0 0;
+.main__chechbox {
+  background: rgba(0, 0, 0, 0.87);
+  height: 18px;
+  width: 18px;
+  margin: 0 10px 0 0;
   vertical-align: middle;
 }
-.lable{
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 20px;  
+.lable {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
-.main__text{
-    margin: 0;
-    font-family: Helvetica;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 20px;
+.main__text {
+  margin: 0;
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
-.text{
-    text-decoration: underline;
+.text {
+  text-decoration: underline;
   text-underline-position: under;
 }
-.active{
-    text-decoration: none;  
-    font-weight: bold;
+.active {
+  text-decoration: none;
+  font-weight: bold;
+}
+@media screen and (max-width: 1080px) {
+  .main {
+    width: calc(100% - 150px);
+    margin-left: 0;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main {
+    width: calc(100% - 100px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .main {
+    width: calc(100% - 60px);
+  }
+  .main__container {
+    display: block;
+  }
+  .main__text {
+    margin-top: 16px;
+  }
+  .card__container {
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main {
+    width: calc(100% - 32px);
+    padding-top: 8px;
+  }
+  .main__text {
+    line-height: 24px;
+    width: 212px;
+  }
 }

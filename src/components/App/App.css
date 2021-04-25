@@ -1,7 +1,5 @@
-.app{
+.app {
   max-width: 1280px;
-  background-color: #FFFFFF;
-  border: solid 1px red;
+  background-color: #ffffff;
   margin: auto;
-  /* height: 100vh; */
 }
